@@ -15,6 +15,7 @@ Utilize Python and the Google Cloud Client Libraries to create a virtual machine
 - Python environment set up with access to GCP client libraries (google-cloud-compute).
 - Access to a GCP account and permissions to create and manage GCE instances.
 - A GCP project set up for this exercise and a service account with the necessary permissions (e.g., Compute Admin) created within it.
+- pipenv installed
 
 ## Tasks
 
@@ -23,14 +24,14 @@ Utilize Python and the Google Cloud Client Libraries to create a virtual machine
 - **Create a Python Virtual Environment**: In your project directory, set up a Python virtual environment to manage dependencies.
 
 ```
-python -m venv env-name
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pipenv install
+pipenv shell
 ```
 
 ## Install Google Cloud Client Libraries:
 
 ```
-pip install google-cloud-compute
+pipenv install google-cloud-compute
 ```
 
 ### Task 2: Prepare Your Python Script
